@@ -1,0 +1,13 @@
+{
+  "calculators": [
+    {
+      "id": "investment",
+      "name": "Kalkulator Investasi"
+    },
+    {
+      "id": "emergencyfund",
+      "name": "Kalkulator Dana Darurat"
+    }
+   
+  ]
+}

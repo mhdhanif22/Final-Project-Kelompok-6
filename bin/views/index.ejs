@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= groupName %></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+      <h1 class="text-3xl font-bold mb-6 text-center"><%= groupName %></h1>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <% members.forEach(function(member) { %>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-6 text-center">
+            <img
+              src="<%= member.image ? member.image : (member.jenis_kelamin === 'Laki-laki' ? 'https://i.ibb.co.com/hZzxCPs/92cd319c-435b-4288-97c9-27598a53b564.jpg' : 'https://i.ibb.co.com/f1wNDPd/e48ef165-1e0d-4cc3-ae9e-05f22831ddb7.jpg') %>"
+              alt="<%= member.nama %>'s image"
+              class="w-24 h-24 object-cover rounded-full mx-auto mb-4 border-2 border-gray-300"
+            />
+            <h2 class="text-xl font-semibold mb-2"><%= member.nama %></h2>
+            <p class="text-gray-600 mb-2">
+              Jenis Kelamin: <%= member.jenis_kelamin %>
+            </p>
+            <% if (member.sosmed) { %>
+            <p class="text-gray-600 flex justify-center space-x-2">
+              <!-- Menampilkan ikon sosial media -->
+              <% member.sosmed.forEach(function(sosmed) { %>
+              <a
+                href="<%= sosmed.link %>"
+                target="_blank"
+                class="text-blue-500 hover:underline"
+              >
+                <% if (sosmed.platform === 'Facebook') { %>
+                <i class="fab fa-facebook fa-xl"></i>
+                <% } else if (sosmed.platform === 'Instagram') { %>
+                <i class="fab fa-instagram fa-xl"></i>
+                <% } else if (sosmed.platform === 'LinkedIn') { %>
+                <i class="fab fa-linkedin fa-xl"></i>
+                <% } else if (sosmed.platform === 'TikTok') { %>
+                <i class="fab fa-tiktok fa-xl"></i>
+                <% } else if (sosmed.platform === 'Twitter') { %>
+                <i class="fab fa-twitter fa-xl"></i>
+                <% } else { %>
+
+                <i class="fas fa-link fa-lg"></i>
+                <% } %>
+              </a>
+              <% }); %>
+            </p>
+            <% } %>
+          </div>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  </body>
+</html>

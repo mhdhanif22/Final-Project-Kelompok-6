@@ -1,0 +1,58 @@
+{
+  "nama": "Kelompok 6 Wellington",
+  "anggota": [
+    {
+      "nama": "Alia Jennifer Kim Ritzky",
+      "jenis_kelamin": "Perempuan",
+      "image": "",
+      "sosmed": []
+    },
+    {
+      "nama": "Erfia Nadia Safari",
+      "jenis_kelamin": "Perempuan",
+      "image": "",
+      "sosmed": []
+    },
+    {
+      "nama": "Movida Tantra Putra Mala",
+      "jenis_kelamin": "Perempuan",
+      "image": "",
+      "sosmed": []
+    },
+    {
+      "nama": "Ni Nyoman Bella Nindia",
+      "jenis_kelamin": "Perempuan",
+      "image": "",
+      "sosmed": []
+    },
+    {
+      "nama": "Muhammad Hanif",
+      "jenis_kelamin": "Laki-laki",
+      "image": "https://i.ibb.co.com/p6DwCP5/08.png",
+      "sosmed": [
+        {
+          "platform": "Instagram",
+          "link": "https://instagram.com/mhdhanif.id"
+        }
+      ]
+    },
+    {
+      "nama": "Abd. Rahman B. Tasrid",
+      "jenis_kelamin": "Laki-laki",
+      "image": "",
+      "sosmed": []
+    },
+    {
+      "nama": "Nuloh",
+      "jenis_kelamin": "Laki-laki",
+      "image": "",
+      "sosmed": []
+    },
+    {
+      "nama": "Mila Widya Wardhani",
+      "jenis_kelamin": "Perempuan",
+      "image": "",
+      "sosmed": []
+    }
+  ]
+}
